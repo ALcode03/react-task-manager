@@ -1,20 +1,20 @@
-import { userParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const tasks = [
-    {
-        id: 1,
+    { 
+        id: 1, 
         title: "Study React Router",
         desc: "Learn routing basics"
     },
-    {
-        id: 2,
+    { 
+        id: 2, 
         title: "Build project",
         desc: "Create SPA app"
     },
-    {
-        id: 3,
-        title: "Practice usestate",
-        desc: "Usestate() and useEffect()"
+    { 
+        id: 3, 
+        title: "Practice useState()",
+        desc: "UseState() and useEffect()"
     }
 ];
 
@@ -24,13 +24,13 @@ export default function TaskDetails() {
     const task = tasks.find(task => task.id === Number(id));
 
     if(!task) {
-        return <h1>Task Not Found</h1>;
+        return <h1>Task not found</h1>;
     }
 
     return (
         <div>
             <h1>{task.title}</h1>
-            <h2>{task.desc}</h2>
+            <p>{task.desc}</p>
         </div>
-    )
+    );
 }
