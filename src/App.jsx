@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 // Import the pages
 import Home from "./pages/Home";
+import Dashboard from "./pages/Dashboard";
 import Tasks from "./pages/Tasks";
 import TaskDetails from "./pages/TaskDetails";
 import About from "./pages/About";
@@ -15,11 +16,37 @@ export default function App() {
       <Navbar />
 
       <Routes>
-          <Route path="/" element={<Home />}></Route>
-          <Route path="/tasks" element={<Tasks />}></Route>
-          <Route path="/tasks/:id" element={<TaskDetails />}></Route>
-          <Route path="/about" element={<About />}></Route>
-          <Route path="*" element={<NotFound />}></Route>
+
+          <Route 
+            path="/"
+            element={<Home />}
+          />
+
+          <Route
+            path="/dashboard"
+            element={<Dashboard />}
+          />
+
+          <Route 
+            path="/tasks"
+            element={<Tasks />}
+          />
+
+          <Route 
+            path="/tasks/:id" 
+            element={<TaskDetails />}
+          />
+
+          <Route 
+            path="/about"
+            element={<About />}
+          />
+
+          <Route 
+            path="*"
+            element={<NotFound />}
+          />
+
       </Routes>
     </>
   )
