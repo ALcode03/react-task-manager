@@ -10,6 +10,7 @@ import SettingsPage from "./pages/SettingsPage";
 import ReportsPage from "./pages/ReportsPage";
 import Tasks from "./pages/Tasks";
 import TasksMenu from "./pages/TasksMenu";
+import CreateTask from "./pages/CreateTask";
 import TaskDetails from "./pages/TaskDetails";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
@@ -52,9 +53,15 @@ export default function App() {
           />
 
           <Route 
-            path="/tasksMenu"
+            path="/tasks/menu"
             element={<TasksMenu />}
           />
+
+          <Route 
+            path="/tasks/new"
+            element={<CreateTask />}
+          />
+
 
           <Route 
             path="/tasks/:id" 
