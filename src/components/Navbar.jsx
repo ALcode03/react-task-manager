@@ -11,6 +11,7 @@ export default function Navbar() {
                  <br/>
                  <Link to="/settings">Settings</Link>
                  <br/>
+                 <Link to="/notifications">Notifications</Link>
                  <Link to="/reports">Reports</Link>
                  <br/>
                 <Link to="/tasks">Task</Link>
