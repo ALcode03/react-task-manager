@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar";
 // Import the pages
 import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
+import ProfilePage from "./pages/ProfilePage";
+import SettingsPage from "./pages/SettingsPage";
+import ReportsPage from "./pages/ReportsPage";
 import Tasks from "./pages/Tasks";
 import TasksMenu from "./pages/TasksMenu";
 import TaskDetails from "./pages/TaskDetails";
@@ -26,6 +29,21 @@ export default function App() {
           <Route
             path="/dashboard"
             element={<Dashboard />}
+          />
+
+           <Route
+            path="/profile"
+            element={<ProfilePage />}
+          />
+
+          <Route
+            path="/settings"
+            element={<SettingsPage />}
+          />
+
+          <Route
+            path="/reports"
+            element={<ReportsPage />}
           />
 
           <Route 
