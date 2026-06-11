@@ -7,15 +7,14 @@ export default function SettingsPage() {
 
                   <section>
                     <h2>Theme</h2>
-                    <p>Light or dark</p>
+                    <p>Light</p>
+                    <p> Dark</p>
                   </section>
-
                   <section>
                     <h2>Notifications</h2>
                     <p>Push alerts</p>
                     <p>Reminders</p>
                   </section>
-
                   <section>
                     <h2>Account</h2>
                     <p>Password</p>
