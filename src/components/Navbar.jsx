@@ -15,7 +15,9 @@ export default function Navbar() {
                  <br/>
                 <Link to="/tasks">Task</Link>
                  <br/>
-                <Link to="/tasksMenu">Task Menu</Link>
+                 <Link to="tasks/new">Create Task</Link>
+                 <br/>
+                <Link to="/tasks/menu">Tasks Menu</Link>
                  <br/>
                 <Link to="/about">About</Link>
         </nav>
