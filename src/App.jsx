@@ -12,6 +12,7 @@ import Tasks from "./pages/Tasks";
 import TasksMenu from "./pages/TasksMenu";
 import CreateTask from "./pages/CreateTask";
 import Notifications from "./pages/Notifications";
+import Activity from "./page/Activity"
 import Team from "./pages/Team";
 import TaskDetails from "./pages/TaskDetails";
 import About from "./pages/About";
@@ -68,6 +69,11 @@ export default function App() {
           <Route 
             path="/notifications"
             element={<Notifications />}
+          /> 
+
+           <Route 
+            path="/activities"
+            element={<Activity />}
           /> 
 
           <Route 
