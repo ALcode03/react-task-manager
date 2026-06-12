@@ -1,17 +1,16 @@
-//import theh dataset
-import activities from "..data/activities";
-import { Activity } from "react";
+// Import the dataset
+import activities from "../data/activities";
 
-export default functioon ActivityFeed() {
+export default function ActivityFeed() {
     return (
         <ul>
-        {
-            activities.map((activity) => (
-                <li key={index}>
-                    {activity}
-                </li>
-            ))
-        }
+            {
+                activities.map((activity, index) => (
+                    <li key={index}>
+                        {activity}
+                    </li>
+                ))
+            }
         </ul>
     );
 }

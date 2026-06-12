@@ -24,6 +24,9 @@ export default function Navbar() {
                 <Link to="/tasks/menu">Tasks Menu</Link>
                  <br/>
                 <Link to="/about">About</Link>
+                <br/>
+                 <Link to="/help">Help</Link>
+
         </nav>
 
     );
