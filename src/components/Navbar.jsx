@@ -14,6 +14,7 @@ export default function Navbar() {
                  <Link to="/notifications">Notifications</Link>
                  <Link to="/reports">Reports</Link>
                  <br/>
+                 <Link to="/activities">Activities</Link>
                 <Link to="/tasks">Task</Link>
                  <br/>
                  <Link to="/team">Team</Link>
